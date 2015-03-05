@@ -16,6 +16,7 @@
     <body>
        
        <!-- START PSD template overlay -->
+       <!-- Remove from finished product -->
         
         <div id="prototype-overlay" style="
            height:100%;
@@ -33,7 +34,7 @@
         </div>
         
         <!-- Toggle to display template with opacity -->
-        <a href="#" onclick="toggle_visibility('prototype-overlay');"
+        <button id="prototype-overlay-button" onclick="toggle_visibility('prototype-overlay');"
             style="
             z-index:1000;
             position:fixed;
@@ -41,7 +42,7 @@
             padding:10px;
             ">
             Overlay
-        </a>
+        </button>
        
        <!-- /END PSD template overlay -->
        
@@ -69,7 +70,7 @@
                     <img src="gfx/dell_computer.png" alt="Main product">
                     <div id="pricebox">
                         
-                        <h3>513<span>kr/kuu</span></h3>
+                        <h3>513<span> kr/kuu</span></h3>
                         <span>Duis36 sit</span>
                         <span>Aliguam con: 13 990</span>
                         <span>Amet sit: 14 990</span>
@@ -104,7 +105,10 @@
                     
                     <h3>Duis sit amet molestie <span>Aliquam congue</span></h3>
                     <a href="#">liquam turpis »</a>
-                    <img src="gfx/photocopier.png" alt="accessorie">
+                    
+                    <div class="promo-image">
+                        <img src="gfx/photocopier.png" alt="accessorie">
+                    </div>
                     
                     <a href="#" class="buy-here">Nuncan</a>
                     
@@ -128,7 +132,10 @@
                     
                     <h3>Duis sit amet molestie <span>Aliquam congue 124</span></h3>
                     <a href="#">liquam turpis »</a>
-                    <img src="gfx/projector.png" alt="accessorie">
+                    
+                    <div class="promo-image">
+                        <img src="gfx/projector.png" alt="accessorie">
+                    </div>
                     
                     <a href="#" class="buy-here">Nuncan</a>
                     
@@ -152,7 +159,10 @@
                     
                     <h3>Duis sit amet molestie <span>Aliquam congue 35</span></h3>
                     <a href="#">liquam turpis »</a>
-                    <img src="gfx/lcd_monitor.png" alt="accessorie">
+                    
+                    <div class="promo-image">
+                        <img src="gfx/lcd_monitor.png" alt="accessorie">
+                    </div>
                     
                     <a href="#" class="buy-here">Nuncan</a>
                     
