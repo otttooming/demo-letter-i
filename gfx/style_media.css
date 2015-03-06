@@ -19,7 +19,7 @@
             text-decoration: underline;
         }
 
-        div, a, a.buy-here, #pricebox {
+        div, a, .btn-buy-here, #pricebox {
             background: #fff;
             color: #000;
             box-shadow: none;
@@ -43,7 +43,7 @@
 
     }
 
-    /* Medium Devices, Desktops */
+/* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
         
         #body-wrapper {
@@ -71,7 +71,7 @@
         
     }
 
-    /* Small Devices, Tablets */
+/* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
         
         #body-wrapper {
@@ -92,7 +92,7 @@
         
     }
 
-    /* Small Devices, Tablets */
+/* Custom */
     @media only screen and (max-width : 640px) {
 
         #body-wrapper {
@@ -101,7 +101,7 @@
         
     }
         
-    /* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 
         .split-view {
@@ -127,7 +127,7 @@
         
     }
 
-    /* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 
         
