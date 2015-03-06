@@ -11,7 +11,7 @@ html {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-style: normal;
 	font-variant: normal;
-	font-weight: 300;
+    min-height: 100%;
 }
 
 body {
@@ -67,7 +67,7 @@ p {
 	font-size: 14px;
     line-height: 17px;
     color: #777;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.1px;
 }
 
 a {
@@ -250,7 +250,6 @@ a.read-more {
     font-size: 13px;
     font-style: normal;
 	font-variant: normal;
-	font-weight: 300;
 }
 
 /* Read more/buy button over accessorie featured image */

@@ -59,7 +59,13 @@
             width: 50%;
         }
         
+        #accessory-listing {
+            text-align: center;
+        }
+        
         .single-item {
+            float: none;
+            display: inline-block;
             margin: 15px auto;
         }
         
@@ -69,16 +75,42 @@
     @media only screen and (max-width : 768px) {
         
         #body-wrapper {
+            margin: auto;
+        }
+        
+        #marketing-info p {
+            width: auto;
+        }
+        
+        #sales-photo img {
+            margin: 15px;
+        }
+        
+        .row {
+            padding: 20px 30px 0;
+        }
+        
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 640px) {
+
+        #body-wrapper {
             background: #fff;
         }
         
+    }
+        
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
         .split-view {
             float: none;
             width: 100%;
         }
         
-        #sales-photo {
-            margin: 15px;
+        #marketing-info, #marketing-info h2 {
+            width: 100%;
         }
         
         #pricebox {
@@ -87,11 +119,6 @@
             bottom: 100px;
             left: 65px;
         }
-        
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
 
         .single-item {
             float: none;
@@ -103,4 +130,5 @@
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 
+        
     }
