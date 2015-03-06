@@ -1,38 +1,106 @@
-@media print {
-    
-    body {
-        background: #fff;
-        color: #000;
-    }
-    
-    img {
-        display: none;
-    }
-    
-    h1, h2, h3, p, a, h2 span, h3 span, a.read-more, #pricebox span, #pricebox h3, #footer a, .single-item a, .row a {
-        color: #000;
-        text-shadow: none;
-    }
-    
-    a.buy-here, #pricebox a {
-        text-decoration: underline;
-    }
-    
-    div, a, a.buy-here, #pricebox {
-        background: #fff;
-        color: #000;
-        box-shadow: none;
-    }
-    
-    #body-wrapper {
-        border: none;
-        box-shadow: none;
-        background: #fff;
-    }
-    
-    /* Remove from final release */
-    #prototype-overlay-button {
-        display: none;
+/* Printer output. Without styling */
+    @media print {
+
+        body {
+            background: #fff;
+            color: #000;
+        }
+
+        img {
+            display: none;
+        }
+
+        h1, h2, h3, p, a, h2 span, h3 span, a.read-more, #pricebox span, #pricebox h3, #footer a, .single-item a, .row a {
+            color: #000;
+            text-shadow: none;
+        }
+
+        a.buy-here, #pricebox a {
+            text-decoration: underline;
+        }
+
+        div, a, a.buy-here, #pricebox {
+            background: #fff;
+            color: #000;
+            box-shadow: none;
+        }
+
+        #body-wrapper {
+            border: none;
+            box-shadow: none;
+            background: #fff;
+        }
+
+        /* Remove from final release */
+        #prototype-overlay-button {
+            display: none;
+        }
+
     }
 
-}
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        
+        #body-wrapper {
+            max-width: 810px;
+            width: auto;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .split-view {
+            width: 50%;
+        }
+        
+        .single-item {
+            margin: 15px auto;
+        }
+        
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        
+        #body-wrapper {
+            background: #fff;
+        }
+        
+        .split-view {
+            float: none;
+            width: 100%;
+        }
+        
+        #sales-photo {
+            margin: 15px;
+        }
+        
+        #pricebox {
+            top: auto;
+            right: auto;
+            bottom: 100px;
+            left: 65px;
+        }
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+        .single-item {
+            float: none;
+            margin: 15px auto;
+        }
+        
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
