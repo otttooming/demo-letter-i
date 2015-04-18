@@ -47,18 +47,12 @@ h3 span {
 p {
 	font-size: 14px;
     line-height: 17px;
-    color: #777;
-    letter-spacing: -0.1px;
 }
 
 a {
     color: #5395d0;
-    letter-spacing: 0.3px;
+    letter-spacing: .3px;
     font-size: 12px;
-    text-decoration: none;
-}
-
-a span {
     text-decoration: underline;
 }
 
@@ -66,8 +60,18 @@ a:visited {
     color: #5395d0;
 }
 
+a:hover, a:focus {
+    color: #f5812d;
+}
+
 a.read-more {
     font-size: 14px;
+}
+
+a.main-link:after {
+    content: "»";
+    display: inline-block;
+    margin-left: 5px;
 }
 
 /* Main content area */
@@ -100,12 +104,6 @@ a.read-more {
     float: left;
 }
 
-/* Preclude floats from moving up */
-
-.clearfloat {
-    clear: both;
-}
-
 /* Product introduction */
 
 #marketing-info h2 {
@@ -117,6 +115,7 @@ a.read-more {
 #marketing-info p {
     position: relative;
     width: 280px;
+    color: #777;
 }
 
 #marketing-info {
@@ -144,20 +143,18 @@ a.read-more {
 
 #pricebox h3 {
     font-size: 36px;
-    line-height: 37px;
     color: #fff;
     letter-spacing: -2px;
-    word-spacing: 1px;
 }
 
 #pricebox h3 span {
+    color: #fff;
     display: inline;
     font-size: 18px;
     letter-spacing: -1px;
 }
 
-#pricebox span {
-    display: block;
+#pricebox p {
     font-size: 10px;
     line-height: 13px;
     color: #fff;
@@ -171,6 +168,10 @@ a.read-more {
     margin-top: 18px;
     padding-right: 15px;
     background: url(06.png) no-repeat right;    
+}
+
+#pricebox a:hover, #pricebox a:focus {
+    color: #f5812d;
 }
 
 /* Row of accessories */
@@ -195,15 +196,12 @@ a.read-more {
     margin: 10px 0;
 }
 
-.single-item .pricing span {
-    display: block;
-}
-
 /* Accessories featured image container, to accept variable dimensions for photos*/
 
 .promo-image {
     height: 165px;
     text-align: center;
+    position: relative;
 }
 
 .promo-image img {
@@ -216,7 +214,7 @@ a.read-more {
     margin: 10px 0;
 }
 
-.pricing span {
+.pricing p {
     font-size: 13px;
 }
 
@@ -240,7 +238,7 @@ a.btn-buy-here {
     background: #456acf url(07.png) no-repeat 90%;
 }
 
-.btn-buy-here:hover {
+.btn-buy-here:hover, .btn-buy-here:focus {
     background-color: #f5812d;
     -webkit-transition: all 750ms ease;
     -moz-transition: all 750ms ease;
@@ -250,28 +248,27 @@ a.btn-buy-here {
 /* Specific product btn placement */
 
 #photocopier .btn-buy-here {
-    top: 150px;
-    right: 40px;
+    top: 80px;
 }
 
 #projector .btn-buy-here {
-    top: 165px;
+    top: 93px;
     right: 55px;
 }
 
 #monitor .btn-buy-here {
-    top: 125px;
+    top: 50px;
     right: 0;
 }
 
 /* End marks and links */
 
 #footer {
-    margin: 20px 0 20px;
+    margin: 0 0 20px 0;
 }
 
 #footer p {
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
 }
 
 #footer p, #footer a {
