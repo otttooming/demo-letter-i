@@ -1,196 +1,211 @@
 <!doctype html>
 <html lang="ee">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>OttTooming@gmail.com</title>
-        <meta name="description" content="Template">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon" href="favicon.ico">
-        
-        <link rel="stylesheet" href="gfx/normalize.css">
+<head>
+  <meta charset="utf-8">
+  <title>OttTooming@gmail.com</title>
+  <meta name="description" content="Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="gfx/style.css">
-        <link rel="stylesheet" href="gfx/style_media.css">
-        
-    </head>
-    <body>
-       
-       <!-- START PSD template overlay -->
-       <!-- Remove from finished product -->
-        
-        <div id="prototype-overlay" style="
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="gfx/normalize.css">
+
+  <link rel="stylesheet" href="gfx/style.css">
+  <link rel="stylesheet" href="gfx/style_media.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <!-- START PSD template overlay -->
+  <!-- Remove from finished product -->
+
+  <div id="prototype-overlay" style="
            height:100%;
            width:100%;
            z-index:999;
            top:-30;
            position:absolute;
-           opacity:0.8;
+           /*opacity:0.8;*/
            display:none;
            text-align:center;
            margin:-35px auto 0;
            ">
-            <img src="gfx/08.png" alt="For testing purposes">
-            
-        </div>
-        
-        <!-- Toggle to display template with opacity -->
-        <button id="prototype-overlay-button" onclick="toggle_visibility('prototype-overlay');"
-            style="
+    <img src="gfx/08.png" alt="For testing purposes">
+
+  </div>
+
+  <!-- Toggle to display template with opacity -->
+  <button id="prototype-overlay-button" onclick="toggle_visibility('prototype-overlay');" style="
             z-index:1000;
             position:fixed;
-            background-color:red;
             padding:10px;
             ">
-            Overlay
-        </button>
-       
-       <!-- /END PSD template overlay -->
-       
-        <div id="body-wrapper">
-            
-            <!-- Product introduction -->
-            
-            <div class="row">
-                
-                <h1>Lorem ipsum dolor sit amet</h1>
-                
-            </div>
-            
-            
-            <div id="sales-pitch" class="row">
-                
-                <div id ="marketing-info" class="split-view">
-                    <h2>Aenean eget <span>molestie urna, nec pellentesque leo.</span></h2>
+    Overlay
+  </button>
 
-                    <p>Duis fermentum est sit amet nulla consectetur, vel laoreet sem placerat. Mauris et facilisis risus. <a href="#" class="read-more">Aliquam turpis</a> enim, euismod mollis faucibus in, eleifend sit amet elit. Aenean gravida eros ac est rhoncus, nec lobortis est vulputate. In nec tortor at erat laoreet adipiscing sed non lacus.</p>
-                </div>
-                
-                <div id="sales-photo" class="split-view">
-                    
-                    <img src="gfx/02.png" alt="Dell computer">
-                    <div id="pricebox">
-                        
-                        <h3>513<span> kr/kuu</span></h3>
-                        <p>Duis36 sit</p>
-                        <p>Aliguam con: 13 990</p>
-                        <p>Amet sit: 14 990</p>
-                        <p><a href="#">Liquam</a></p>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-            
-            <div class="clearfloat"></div>
-            
-            
-            <div class="row separator">
-                
-                <a href="#" class="main-link">liquam turpis</a>
-                
-            </div>
-            
-            
-            <div class="clearfloat"></div>
-            
-            <!-- Row of accessories  -->
-            
-            <div id="accessory-listing" class="row">
-                
-                <div id="photocopier" class="single-item">
-                                       
-                    <h3>Duis sit amet molestie <span>Aliquam congue</span></h3>
-                    <a href="#" class="main-link">liquam turpis</a>
-                    
-                    <div class="promo-image">
-                        <img src="gfx/04.png" alt="Photocopier">
-                        <a href="#" class="btn-buy-here">Nuncan</a>
-                    </div>
-                    
-                    <div class="pricing monthly-installements">
-                        <p><strong>Suspendisse 513 kr</strong></p>
-                        <p>Pellentesque 36</p>
-                        <p>Elfenfesutek 0 kr</p>
-                    </div>
-                    <div class="pricing outright-purchase">
-                        <p>Aliguam 13 990 kr</p>
-                        <p><s>Molestie14 990 kr</s></p>
-                    </div>
-                                        
-                </div>
-                
-                <div id="projector" class="single-item single-item-center">
-                                       
-                    <h3>Duis sit amet molestie <span>Aliquam congue 124</span></h3>
-                    <a href="#" class="main-link">liquam turpis</a>
-                    
-                    <div class="promo-image">
-                        <img src="gfx/05.png" alt="Projector">
-                        <a href="#" class="btn-buy-here">Nuncan</a>
-                    </div>
-                    
-                    <div class="pricing monthly-installements">
-                        <p><strong>Suspendisse 513 kr</strong></p>
-                        <p>Pellentesque 36</p>
-                        <p>Elfenfesutek 0 kr</p>
-                    </div>
-                    <div class="pricing outright-purchase">
-                        <p>Aliguam 13 990 kr</p>
-                        <p><s>Molestie14 990 kr</s></p>
-                    </div>
-                                        
-                </div>
-                
-                <div id="monitor" class="single-item">
-                                       
-                    <h3>Duis sit amet molestie <span>Aliquam congue 35</span></h3>
-                    <a href="#" class="main-link">liquam turpis</a>
-                    
-                    <div class="promo-image">
-                        <img src="gfx/03.png" alt="LCD monitor">
-                        <a href="#" class="btn-buy-here">Nuncan</a>
-                    </div>
-                    
-                    <div class="pricing monthly-installements">
-                        <p><strong>Suspendisse 513 kr</strong></p>
-                        <p>Pellentesque 36</p>
-                        <p>Elfenfesutek 0 kr</p>
-                    </div>
-                    <div class="pricing outright-purchase">
-                        <p>Aliguam 13 990 kr</p>
-                        <p><s>Molestie14 990 kr</s></p>
-                    </div>
-                                        
-                </div>
-                
-            </div>
-            
-            
-            <div class="clearfloat"></div>
-            
-            <!-- End marks and links  -->
-            
-            <div id="footer" class="row">
-            
-                <a href="#" class="main-link">liquam turpis enim, euismod mollis faucibus</a>
-                <p>Nunc mattis arcu neque. Fusce in tempus libero, at posuere est.</p>
-                
-            </div>
-            
+  <!-- /END PSD template overlay -->
+
+  <div id="wrapper">
+
+    <div id="header">
+      <h1>Lorem ipsum dolor sit amet</h1>
+    </div>
+
+
+    <div id="marketing-info" class="row">
+      <h2>
+        <span>Aenean eget</span>
+        molestie urna, nec pellentesque leo.
+      </h2>
+
+      <div class="details">
+      <p>Duis fermentum est sit amet nulla consectetur, vel laoreet sem placerat. Mauris et facilisis risus. <a href="#" class="read-more">Aliquam turpis</a> enim, euismod mollis faucibus in, eleifend sit amet elit. Aenean gravida eros ac est rhoncus, nec
+        lobortis est vulputate. In nec tortor at erat laoreet adipiscing sed non lacus.</p>
+      </div>
+
+      <div class="side-image">
+
+        <p>
+          <img src="gfx/02.png" alt="Dell computer">
+        </p>
+        <div id="pricebox">
+
+          <p>
+            <span>513</span>
+            kr/kuu
+          </p>
+          <p>Duis36 sit</p>
+          <p>Aliguam con: 13 990</p>
+          <p>Amet sit: 14 990</p>
+          <p><a href="#">Liquam</a></p>
+
         </div>
-        
-        <!-- JS toggle for switching PSD template   -->
-        <script type="text/javascript">
-            function toggle_visibility(id) {
-            var e = document.getElementById(id);
-            e.style.display = ((e.style.display!='none') ? 'none' : 'block');
-            }
-        </script>
-   
-    </body>
+
+      </div>
+      <p><a href="#" class="main-link">liquam turpis</a></p>
+
+
+    </div>
+
+
+
+    <div id="accessory-listing" class="row">
+
+      <div class="single-item">
+
+        <h3>
+          <span>Duis sit amet molestie</span>
+          Aliquam congue
+        </h3>
+        <p><a href="#" class="main-link">liquam turpis</a></p>
+
+        <div class="promo-image">
+          <p>
+            <img src="gfx/04.png" alt="Photocopier">
+          </p>
+          <p><a href="#" class="btn-buy">Nuncan</a></p>
+        </div>
+
+        <div class="details">
+          <p>
+            <strong>Suspendisse 513 kr</strong>
+          </p>
+          <p>Pellentesque 36</p>
+          <p>Elfenfesutek 0 kr</p>
+        </div>
+        <div class="details">
+          <p>Aliguam 13 990 kr</p>
+          <p>
+            <del>Molestie14 990 kr</del>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="single-item">
+
+        <h3>
+          <span>Duis sit amet molestie</span>
+          Aliquam congue 124
+        </h3>
+        <p><a href="#" class="main-link">liquam turpis</a></p>
+
+        <div class="promo-image">
+          <p>
+            <img src="gfx/05.png" alt="Projector">
+          </p>
+          <p><a href="#" class="btn-buy">Nuncan</a></p>
+        </div>
+
+        <div class="details">
+          <p>
+            <strong>Suspendisse 513 kr</strong>
+          </p>
+          <p>Pellentesque 36</p>
+          <p>Elfenfesutek 0 kr</p>
+        </div>
+        <div class="details">
+          <p>Aliguam 13 990 kr</p>
+          <p>
+            <del>Molestie14 990 kr</del>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="single-item">
+
+        <h3>
+          <span>Duis sit amet molestie</span>
+          Aliquam congue 35
+        </h3>
+        <p><a href="#" class="main-link">liquam turpis</a></p>
+
+        <div class="promo-image">
+          <p>
+            <img src="gfx/03.png" alt="LCD monitor">
+          </p>
+          <p><a href="#" class="btn-buy">Nuncan</a></p>
+        </div>
+
+        <div class="details">
+          <p>
+            <strong>Suspendisse 513 kr</strong>
+          </p>
+          <p>Pellentesque 36</p>
+          <p>Elfenfesutek 0 kr</p>
+        </div>
+        <div class="details">
+          <p>Aliguam 13 990 kr</p>
+          <p>
+            <del>Molestie14 990 kr</del>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="footer" class="row">
+
+      <p><a href="#" class="main-link">liquam turpis enim, euismod mollis faucibus</a></p>
+      <p>Nunc mattis arcu neque. Fusce in tempus libero, at posuere est.</p>
+
+    </div>
+
+  </div>
+
+  <!-- JS toggle for switching PSD template   -->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
+    }
+  </script>
+
+</body>
+
 </html>
