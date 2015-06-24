@@ -13,40 +13,10 @@
 
   <link rel="stylesheet" href="gfx/style.css">
   <link rel="stylesheet" href="gfx/style_media.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-
-  <!-- START PSD template overlay -->
-  <!-- Remove from finished product -->
-
-  <div id="prototype-overlay" style="
-           height:100%;
-           width:100%;
-           z-index:999;
-           top:-30;
-           position:absolute;
-           /*opacity:0.8;*/
-           display:none;
-           text-align:center;
-           margin:-35px auto 0;
-           ">
-    <img src="gfx/08.png" alt="For testing purposes">
-
-  </div>
-
-  <!-- Toggle to display template with opacity -->
-  <button id="prototype-overlay-button" onclick="toggle_visibility('prototype-overlay');" style="
-            z-index:1000;
-            position:fixed;
-            padding:10px;
-            ">
-    Overlay
-  </button>
-
-  <!-- /END PSD template overlay -->
 
   <div id="wrapper">
 
@@ -62,8 +32,8 @@
       </h2>
 
       <div class="details">
-      <p>Duis fermentum est sit amet nulla consectetur, vel laoreet sem placerat. Mauris et facilisis risus. <a href="#" class="read-more">Aliquam turpis</a> enim, euismod mollis faucibus in, eleifend sit amet elit. Aenean gravida eros ac est rhoncus, nec
-        lobortis est vulputate. In nec tortor at erat laoreet adipiscing sed non lacus.</p>
+        <p>Duis fermentum est sit amet nulla consectetur, vel laoreet sem placerat. Mauris et facilisis risus. <a href="#">Aliquam turpis</a> enim, euismod mollis faucibus in, eleifend sit amet elit. Aenean gravida eros ac est rhoncus, nec lobortis est vulputate.
+          In nec tortor at erat laoreet adipiscing sed non lacus.</p>
       </div>
 
       <div class="side-image">
@@ -73,19 +43,19 @@
         </p>
         <div id="pricebox">
 
-          <p>
+          <p id="payment-rate">
             <span>513</span>
             kr/kuu
           </p>
           <p>Duis36 sit</p>
           <p>Aliguam con: 13 990</p>
           <p>Amet sit: 14 990</p>
-          <p><a href="#">Liquam</a></p>
+          <p class="buy-now"><a href="#">Liquam</a></p>
 
         </div>
 
       </div>
-      <p><a href="#" class="main-link">liquam turpis</a></p>
+      <p class="read-more"><a href="#">liquam turpis</a></p>
 
 
     </div>
@@ -100,13 +70,13 @@
           <span>Duis sit amet molestie</span>
           Aliquam congue
         </h3>
-        <p><a href="#" class="main-link">liquam turpis</a></p>
+        <p class="read-more"><a href="#">liquam turpis</a></p>
 
         <div class="promo-image">
           <p>
             <img src="gfx/04.png" alt="Photocopier">
           </p>
-          <p><a href="#" class="btn-buy">Nuncan</a></p>
+          <p class="buy-now"><a href="#" class="btn">Nuncan</a></p>
         </div>
 
         <div class="details">
@@ -131,13 +101,13 @@
           <span>Duis sit amet molestie</span>
           Aliquam congue 124
         </h3>
-        <p><a href="#" class="main-link">liquam turpis</a></p>
+        <p class="read-more"><a href="#">liquam turpis</a></p>
 
         <div class="promo-image">
           <p>
             <img src="gfx/05.png" alt="Projector">
           </p>
-          <p><a href="#" class="btn-buy">Nuncan</a></p>
+          <p class="buy-now"><a href="#" class="btn">Nuncan</a></p>
         </div>
 
         <div class="details">
@@ -162,13 +132,13 @@
           <span>Duis sit amet molestie</span>
           Aliquam congue 35
         </h3>
-        <p><a href="#" class="main-link">liquam turpis</a></p>
+        <p class="read-more"><a href="#">liquam turpis</a></p>
 
         <div class="promo-image">
           <p>
             <img src="gfx/03.png" alt="LCD monitor">
           </p>
-          <p><a href="#" class="btn-buy">Nuncan</a></p>
+          <p class="buy-now"><a href="#" class="btn">Nuncan</a></p>
         </div>
 
         <div class="details">
@@ -191,20 +161,12 @@
 
     <div id="footer" class="row">
 
-      <p><a href="#" class="main-link">liquam turpis enim, euismod mollis faucibus</a></p>
+      <p class="read-more"><a href="#">liquam turpis enim, euismod mollis faucibus</a></p>
       <p>Nunc mattis arcu neque. Fusce in tempus libero, at posuere est.</p>
 
     </div>
 
   </div>
-
-  <!-- JS toggle for switching PSD template   -->
-  <script type="text/javascript">
-    function toggle_visibility(id) {
-      var e = document.getElementById(id);
-      e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
-    }
-  </script>
 
 </body>
 
